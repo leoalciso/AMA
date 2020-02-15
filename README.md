@@ -1,0 +1,18 @@
+Question Board 
+Web Application to ease classroom student interaction with emphasis on incentive learning.
+
+To run application
+
+1)Using pip, install Django VirtualEnv
+https://help.dreamhost.com/hc/en-us/articles/215317948-How-to-install-Django-using-virtualenv
+
+2)Download Python
+https://www.python.org/downloads/
+
+3)Clone/Download the source files
+
+4)cd into the project file
+
+5)In terminal
+$ python manage.py runserver
+
