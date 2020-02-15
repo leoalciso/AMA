@@ -1,0 +1,104 @@
+<!--
+Author: Colorlib
+Author URL: https://colorlib.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Creative Colorlib SignUp Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Custom Theme files -->
+<link href="static/login_app/css/index_style.css" rel="stylesheet" type="text/css" media="all" />
+<!-- //Custom Theme files -->
+<!-- web font -->
+<link href="//fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i" rel="stylesheet">
+<!-- //web font -->
+</head>
+<body>
+	<!-- main -->
+	<div class="main-w3layouts wrapper">
+        <h1>{{this_user.first_name}}'s Questions below! </h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+                {% for index, val in user_matched_jobs.items %}
+                {% if val == 'true' %}
+                    <h1><a href='/answer/{{index.id}}'>{{index.title}}</a></h1>
+                    <p></p>
+                    <p><a href='/give_up/{{index.id}}'>Give Up</a></p>
+                    <br>
+                    <!-- <p><a href='/finish/{{index.id}}'>Finished</a></p> -->
+                {% endif %}
+                {% endfor %}
+                <!-- <form action="/create_job">
+                    {% csrf_token %}
+					<input type="submit" value="CREATEJOB">
+                </form> -->
+                
+            </div>
+        </div>
+        <h1>Question Board</h1>
+		<div class="main-agileinfo">
+			<div class="agileits-top">
+                {% for index, val in user_matched_jobs.items %}
+                {% if val == 'false' %}
+                    {% if index.posted_by == this_user %}
+                    <h1><a href='/answer/{{index.id}}'>{{index.title}}</a></h1>
+
+                    <!-- <p><a href='/add_to_jobs/{{index.id}}'>PickUp</a></p> -->
+                    <p><a href='/edit_job/{{index.id}}'>Edit</a></p>
+                    <p><a href='/delete/{{index.id}}'>Delete</a></p>
+                    <p><a href='/finish/{{index.id}}'>Finished</a></p>
+                    <br>
+                    {% else %}
+                    <h1><a href='/answer/{{index.id}}'>{{index.title}}</a></h1>
+
+                    <p><a href='/add_to_jobs/{{index.id}}'>PickUp</a></p>
+                    <br>
+                    {% endif %}
+                {% endif %}
+                <!-- <h1>{{index.title}}</h1>
+                <p>{{index.location}}</p>
+                <p><a href='#'>View</a></p>
+                    {% if val == 'true' %}
+                        <p><a href='#'>Remove</a></p>
+                        <p><a href='#'>Edit</a></p>
+                    {% else %}
+                        <p><a href='/add_to_jobs/{{index.id}}'>PickUp</a></p>
+                    {% endif %}
+                    <br> -->
+                {% endfor %}
+                <br>
+                <p>:D</p>
+                <p><a href='/create_job'>Create Question</a></p>
+            </div>
+        </div>
+        <!-- <h1><a href='/answers'>Answered Questions</a></h1>
+        <br> -->
+        <h1><a href='/logout'>Logout</a></h1>
+		<!-- copyright -->
+		<div class="colorlibcopy-agile">
+			<p>© 2018 Colorlib Signup Form. All rights reserved | Design by <a href="https://colorlib.com/" target="_blank">Colorlib</a></p>
+		</div>
+		<!-- //copyright -->
+		<ul class="colorlib-bubbles">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+        </div>
+    </div>
+    
+	<!-- //main -->
+</body>
+</html>
