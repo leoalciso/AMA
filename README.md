@@ -14,7 +14,7 @@ To run application
 1)Using pip, install Django VirtualEnv<br>
 https://help.dreamhost.com/hc/en-us/articles/215317948-How-to-install-Django-using-virtualenv
 
-2)Download Python
+2)Download Python<br>
 https://www.python.org/downloads/
 
 3)Clone/Download the source files
