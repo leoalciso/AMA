@@ -3,7 +3,7 @@ Web Application to ease classroom student interaction with emphasis on incentive
 
 Made at Google Hack-a-thon event at SJSU 11/15/19
 
-Future Changes:
+Future Changes:<br>
 -Adding a question archive to save questions that users post<br>
 -Adding ability to search for questions by topic/random query<br>
 -Fixing models so that responses are question-specific<br><br>
@@ -11,7 +11,7 @@ Future Changes:
 
 To run application
 
-1)Using pip, install Django VirtualEnv
+1)Using pip, install Django VirtualEnv<br>
 https://help.dreamhost.com/hc/en-us/articles/215317948-How-to-install-Django-using-virtualenv
 
 2)Download Python
