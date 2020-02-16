@@ -1,7 +1,8 @@
 Question Board 
 Web Application to ease classroom student interaction with emphasis on incentive learning.
 
-Made at Google Hack-a-thon event at SJSU 11/15/19
+Made at Google Hack-a-thon event at SJSU 11/15/19<br>
+Created with Django framework
 
 Overview:<br>
 -Students can post questions and other students can answer in a mini-chat specific to the question<br>
