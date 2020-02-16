@@ -1,4 +1,4 @@
-Question Board 
+Ask Me Anything!<br>
 Web Application to ease classroom student interaction with emphasis on incentive learning.
 
 Made at Google Hack-a-thon event at SJSU 11/15/19<br>
