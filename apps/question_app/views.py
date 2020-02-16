@@ -154,6 +154,11 @@ def delete(request,methods='GET'):
     this_job.delete()
     return redirect(job_index)
 
+def finish(request,methods ='GET'):
+    this_job=Job.objects.get(id=methods)
+    this_job.delete()
+    return redirect(job_index)
+
 def give_up(request,methods='GET'):
     this_user=request.session['user.id']
     this_job=Job.objects.get(id=methods)
