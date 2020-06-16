@@ -29,3 +29,6 @@ https://www.python.org/downloads/
 5)In terminal
 $ python manage.py runserver
 
+6)In browser
+enter in searchbar localhost:8000
+
