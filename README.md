@@ -11,7 +11,7 @@ Overview:<br>
 Future Changes:<br>
 -Adding a question archive to save questions that users post<br>
 -Adding ability to search for questions by topic/random query<br>
--Fixing models so that responses are question-specific<br><br>
+-Fixing models so that responses are question-specific<br>
 -Optional anonymity of question posters/answerers <br>
 
 To run application:
