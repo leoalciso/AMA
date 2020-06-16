@@ -27,10 +27,8 @@ https://www.python.org/downloads/
 4)cd into the project file
 
 5)In terminal
-
 $ python manage.py runserver
 
 6)In browser
-
 enter in searchbar localhost:8000
 
